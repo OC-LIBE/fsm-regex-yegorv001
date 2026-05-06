@@ -9,10 +9,10 @@ txt = product_description = """
 
 def func(txt):
 
-    pattern1 = r'<\W\w+>'
-    pattern2 = r'<\w+>'
-    pattern3 = r'<div \w+\W+\w+\W+\w+\W>'
-    pattern4 = r'\w+&\w+'
+    pattern1 = r'<[^>]+>'
+    pattern2 = r'&\w+;'
+    pattern3 = r'\s{2,}'
+    pattern4 = r'\W{2,}'
     x1 = re.sub(pattern1, "", txt)
     x2 = re.sub(pattern2, "", x1)
     x3 = re.sub(pattern3, "", x2)
