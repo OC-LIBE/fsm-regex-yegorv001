@@ -1,0 +1,6 @@
+product_description = """
+<div class="long-description">
+    <p><strong>Amazing</strong> and&amp; creative  sample description of  a \
+    product&trade; with <em>5-star***** reviews!!!</em></p>
+</div>
+"""
